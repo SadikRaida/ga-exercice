@@ -1,4 +1,4 @@
-name : Push on dev
+name : Push when TS file is edited
 
 on: 
   push: 

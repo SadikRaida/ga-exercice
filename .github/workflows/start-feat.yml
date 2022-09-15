@@ -1,4 +1,4 @@
-name : Push on dev
+name : Push on feat/
 
 on: 
   push: 

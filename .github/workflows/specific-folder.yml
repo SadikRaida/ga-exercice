@@ -1,4 +1,4 @@
-name : Push on dev
+name : Push on specific folder
 
 on: 
   push: 
