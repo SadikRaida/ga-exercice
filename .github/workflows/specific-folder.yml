@@ -1,0 +1,15 @@
+name : Push on dev
+
+on: 
+  push: 
+    paths: #tout passe sauf staging
+        - 'specific-folder/**'
+
+jobs: 
+  build-test: 
+    runs-on: ubuntu-latest 
+
+    steps: 
+      - name: Print the current time
+        run: |
+          echo $(date)

@@ -1,0 +1,16 @@
+name : Push on dev
+
+on: 
+  push: 
+    branches: #tout passe sauf staging
+        - feat/**
+
+
+jobs: 
+  build-test: 
+    runs-on: ubuntu-latest 
+
+    steps: 
+      - name: Print the current time
+        run: |
+          echo $(date)
