@@ -2,9 +2,8 @@ name : Push except on staging
 
 on: 
   push: 
-    branches: #tout passe sauf staging
-        - '*'
-        - '!staging'
+    branches-ignore: #tout passe sauf staging
+        - 'staging'
 
 jobs: 
   build-test: 

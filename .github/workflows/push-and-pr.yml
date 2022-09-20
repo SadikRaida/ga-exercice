@@ -1,0 +1,22 @@
+name: Push and Pull reuquest
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First job
+        run: echo "Hello, world!"
+  second-job:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Second job
+        run: echo "Hello, world!"
